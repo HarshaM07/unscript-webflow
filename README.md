@@ -1,7 +1,10 @@
-# Project Name: Landing Page with Book Demo and Footer Design
+# Project Name: Landing Page
 
 ## Description
 This project is a responsive web page that features:
+
+- navbar 
+- features and trusted partners
 - A "Book a Demo" card with a rocket icon and subscription form.
 - A well-structured footer with links to various sections including Use Cases, Features, Resources, and Company information.
 
