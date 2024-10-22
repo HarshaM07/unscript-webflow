@@ -1,0 +1,491 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+}
+
+.main-header {
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.contact-sales {
+    background-color:#0158F7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    max-width: 600px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.hero h1 span {
+    color:#0158F7;
+}
+
+.hero p {
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.demo-form input {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.demo-form button {
+    padding: 10px 20px;
+    background-color:#0158F7 ;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero-divider {
+    width: 80%;
+    height: 2px;
+    background-color: #ccc;
+    margin: 20px auto;
+    border: none;
+}
+.hero-image img {
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* Trusted Section */
+.trusted {
+    background: #fff;
+    padding: 0px 10px;
+    text-align: center;
+}
+
+.trusted h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    font-weight: 600; 
+}
+
+.logo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.logo-grid img {
+    max-width: 100px; 
+    height: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    padding: 10px; 
+}
+
+.logo-grid img:hover {
+    opacity: 1;
+}
+
+
+.feature-block, .feature-block-second {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+}
+
+
+.feature-block-second {
+    flex-direction: row; 
+}
+
+
+.feature-content, .feature-content-second {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.feature-image, .feature-image-second {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Feature Icons */
+.feature-icon, .feature-icon-second {
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.icon-base, .icon-base-second {
+    width: 100%;
+    height: auto;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+}
+.icon-overlay {
+    position: absolute;
+    top: 9px;
+    left: 4px;
+    width: 50%;
+    height: 50%;
+}
+
+
+.feature-image img, .feature-image-second img {
+    max-width: 450px; /* Adjust as needed */
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.feature-content h3, .feature-content-second h3 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin: 0;
+}
+
+.feature-heading, .feature-heading-second {
+    color: #007bff; 
+}
+
+.feature-content p, .feature-content-second p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+
+.discover-link, .discover-link-second {
+    font-size: 1em;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.discover-link:hover, .discover-link-second:hover {
+    text-decoration: underline;
+}
+
+
+.feature-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+.feature-content {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.feature-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.feature-icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.icon-base {
+    width: 100%;
+    height: auto;
+}
+
+
+.feature-image img {
+    max-width: 450px; 
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.feature-content h3 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin: 0;
+}
+
+.feature-heading {
+    color: #007bff; 
+}
+
+
+.feature-content p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+
+.discover-link {
+    font-size: 1em;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.discover-link:hover {
+    text-decoration: underline;
+}
+
+ .header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+ /* Card for 'Book a Demo' */
+.card {
+    background: linear-gradient(to right, #ccd5f3, #f8aca9);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: -150px auto 30px; 
+    z-index: 3; 
+    position: absolute;
+    margin-left: 250px;
+    
+}
+
+/* Left side of the card */
+.card .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+.card .left img {
+    width: 30px;
+    height: 30px;
+    margin-left: 280px;
+    margin-top: -44px;
+}
+
+.card .left h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: black;
+}
+
+/* Right side of the card */
+.card .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card .right p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* Email input */
+.card input[type="email"] {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    margin-right: 10px;
+    width: calc(100% - 140px); /* Adjusted width */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Submit button */
+.card input[type="submit"] {
+    padding: 12px 20px;
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.card input[type="submit"]:hover {
+    background-color: #005fa3;
+}
+
+/* Footer */
+.footer {
+    background-color: #0C111D;
+    padding: 40px 20px;
+    color: #fff;
+    position: relative; 
+    z-index: 1; 
+}
+
+/* Footer top section */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+.footer-logo img {
+    max-height: 50px;
+    
+    background-color: #fff;
+}
+
+
+.social-icons {
+    display: flex;
+    gap: 20px; 
+}
+
+.social-icons a img {
+    max-width: 25px;
+    width: 48px;
+    height: 36px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 24%;
+    padding: 10px;
+    text-align: left;
+}
+
+.column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #fff; 
+    padding-bottom: 5px;
+}
+
+.column a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.column a:hover {
+    text-decoration: underline;
+}
+
+/* Footer info */
+.footer-info {
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+.copyright{
+    text-align: center;
+}
